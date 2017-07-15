@@ -196,7 +196,7 @@ body {
 
 #hp {
     width: 960px;
-    height:300px;
+    height:400px;
 }
 #hasara {
     width: 960px;
@@ -304,12 +304,22 @@ body {
     background-color: white;
 }
 
+#hp p{
+    font-family: 'open-sans';
+    font-size: 13pt;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-left: 100px;
+     text-align: justify;
+}
 .parallextext p{
     font-family: 'open-sans';
     font-size: 13pt;
     line-height: 30px;
     margin-top: 10px;
+     text-align: justify;
 }
+
 #atrim a{
     margin-top: 20px;
     font-size: 20pt;
