@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="he">
+
+<head>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <meta charset="utf-8" />
+    <title>קורס מפתחי הדרכה 2017</title>
+    <meta name="description" content="DoGuide - המדריך למגדל גור נחייה" />
+    <meta name="keywords" content="DoGuide, Guide Dog,גידול גור, אימוץ גור נחייה ,כלב נחייה, גור נחייה " />
+    <meta name="author" content="Shir Brickman, Inbar Goldberg, Erez Dabbah" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+    <!--Animate wow (CSS+Scripts)-->
+    <link rel="stylesheet" href="css/libs/animate.css" />
+    <link rel="stylesheet" href="css/site.css" />
+    <script src="dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+
+    </script>
+
+
+    <!-- Other Scripts -->
+
+    <script src="jScripts/Site_JavaScript.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var offPix = 50;
+
+            $("a").on('click', function(event) {
+
+                if (this.hash !== "") {
+
+                    event.preventDefault();
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top - offPix
+                    }, 1500, function() {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+
+    </script>
+    <script>
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            var os = $('#div1').offset().top;
+            var ht = $('#div1').height();
+            if (scroll > os + ht) {
+                $('#div2').addClass('blue');
+            }
+        });
+
+    </script>
+
+
+
+</head>
+
+<body onload="tab_nav()">
+
+
+
+    <!--לוגו + תפריט ניווט-->
+
+    <header>
+
+
+        <div id="logoarea" class="row small center wow fadeInDown top__element">
+        
+    
+        </div>
+        <nav class="menu" id="menuNav">
+            <ul class="row small center wow fadeInDown top__element">
+                <li> <a href="#logoarea" class="unActiveAndHover"> דף הבית </a> </li>
+                <li id="doifitLi"> <a id="doifitA" href="#do-i-fit-title" class="unActiveAndHover"> תכני הכשרה</a>
+                 <ul>
+                        <li><a href="#tips" id="tipsSa">מבוא ללמידה</a></li>
+                        <li><a href="#preparations">מיפוי צרכי הדרכה</a></li>
+                        <li><a href="#where-is-the-dog">מודל אלפא</a></li>
+                     <li><a href="#where-is-the-dog">פיתוח סגלים</a></li>
+                     <li><a href="#where-is-the-dog">סביבת למידה</a></li>
+                     <li><a href="#where-is-the-dog">ניהול הדרכה</a></li>
+                     <li><a href="#where-is-the-dog">חדשנות בלמידה</a></li>
+                    </ul>
+                </li>
+                <li id="beforeAdoptingLi">
+                    <a id="beforeAdoptingA" href="#before-adopting-title" class="unActiveAndHover"> תכני העשרה </a>
+
+                </li>
+                <li id="duringLi">
+                    <a id="duringA" ְhref="#during-title" class="unActiveAndHover">אתרים מומלצים </a>
+                </li>
+                <li id="afterLi">
+                    <a id="afterA" href="#after-title" class="unActiveAndHover">פורום </a>
+                </li>
+                <li id="contactLi"> <a id="contactA" href="#contact-title" class="unActiveAndHover"> לו"ז </a> </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!--תחילת קונטיינר-->
+
+    <div id="container" >   
+
+      <section class="parallextext" id="hp">
+    <h1 >ברוכים הבאים לאתר קורס מפתחי הדרכה 2017!</h1>
+    <p>באתר זה תוכלו למצוא את כלל תכני הקורס...
+        <br> קרן פהה את צריכה להשלים תוכן..
+    </p>
+        <p class="parallextext">בברכה, סגל הקורס <br>
+        סא"ל קרן מוריץ  וסיגל אלוש</p>
+         
+        </section>
+        <!--תוכן-->
+
+        <div id="doifitDiv"></div>
+        <section class="parallax1" id="do-i-fit-title">
+            <h2 class="parallaxTitle">תכני הכשרה</h2>
+        </section>
+        
+        <section class="parallextext" id="tacnim">
+            <h3>מבוא ללמידה</h3>
+            <section>
+            <a  class="riboa1" href="images/kbaziv/mabollmida.pdf">מבוא ללמידה</a>
+            <a class="riboa1" href="images/kbaziv/lamidarabtozma.pdf">למידה רבת עוצמה</a>
+            <a class="riboa1" href="images/kbaziv/dahbono.pdf">הכובעים    של דה בונו</a>
+            <a class="riboa1" href="images/kbaziv/mamarlmidarabatozma.pdf">מאמר למידה משמעותית</a>
+            <a  class="riboa1" href="images/kbaziv/mamarsignonotblamida.pdf">מאמר על סגנונות בלמידה</a>
+                </section>
+            <p></p>
+         <section>
+
+            <h3>מיפוי צרכי הדרכה</h3>
+            <a class="riboa2" href="images/kbaziv/mabollmida.pdf">מבוא ללמידה</a>
+            <a  class="riboa2" href="images/kbaziv/lamidarabtozma.pdf">למידה רבת עוצמה</a>
+        </section>
+             <h3>מודל אלפא</h3>
+             <h3>פיתוח סגלים</h3>
+             <h3>סביבת למידה</h3>
+             <h3>ניהול הדרכה</h3>
+             <h3>חדשנות בלמידה</h3>
+             <h3></h3>
+        </section>
+           <div id="doifitDiv"></div>
+        <section class="parallax1" id="do-i-fit-title">
+            <h2 class="parallaxTitle">תכני העשרה</h2>
+        </section>
+        
+        <section class="parallextext" id="hp">
+        </section>
+           <div id="doifitDiv"></div>
+        <section class="parallax1" id="do-i-fit-title">
+            <h2 class="parallaxTitle">אתרים מומלצים</h2>
+        </section>
+        
+        <section class="parallextext" id="hp">
+        </section>
+           <div id="doifitDiv"></div>
+        <section class="parallax1" id="do-i-fit-title">
+            <h2 class="parallaxTitle">לו"ז שבועי </h2>
+        </section>
+        
+        <section class="parallextext" id="hp">
+        </section>
+     </div>  
+
+</body>
+
+</html>
